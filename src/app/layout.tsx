@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
+import (Image)
 
 import "./globals.css";
 import Link from "next/link";
+import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,8 +33,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <nav className="w-full p-4 bg-gray-800 text-white flex justify-between">
-          <h2 className="text-xl font-semibold">FASTRAM</h2>
+        <nav className="w-full p-4 bg-gray-800 text-white flex justify-between items-center">
+          <Image 
+            src="/TK.png" 
+            alt="Hero Background"
+            width={100}
+            height={100}
+            priority
+          />
           <NavigationMenu>
             <NavigationMenuList className="flex gap-4">
               <NavigationMenuItem>
