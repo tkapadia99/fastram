@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
-import (Image)
 
 import "./globals.css";
 import Link from "next/link";
@@ -30,6 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -45,17 +47,17 @@ export default function RootLayout({
             <NavigationMenuList className="flex gap-4">
               <NavigationMenuItem>
                 <Link href="/">
-                  <Button variant="ghost" className="text-white">Home</Button>
+                  <Button variant="ghost" className="text-white font-extrabold 2xl:text-2xl">Home</Button>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <Link href="/about">
-                  <Button variant="ghost" className="text-white">About</Button>
+                  <Button variant="ghost" className="text-white font-extrabold 2xl:text-2xl">About</Button>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <Link href="/contact">
-                  <Button variant="ghost" className="text-white">Contact</Button>
+                  <Button variant="ghost" className="text-white font-extrabold 2xl:text-2xl">Contact</Button>
                 </Link>
               </NavigationMenuItem>
             </NavigationMenuList>
