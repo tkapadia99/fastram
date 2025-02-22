@@ -28,11 +28,25 @@ export default function Home() {
             <Link href="/contact">
               <Button className="font-extrabold">Contact</Button>
             </Link>
-            <Link href="/contact">
-              <Button className="font-extrabold">Test1</Button>
+            <Link href="https://github.com/tkapadia99" rel="noopener noreferrer" target="_blank">
+              <Button className="font-extrabold"><Image 
+                              src="/gh_logo_2.png" 
+                              alt="Github Logo"
+                              width={30}
+                              height={30}
+                              className="object-contain"
+                              priority
+                            />Github</Button>
             </Link>
-            <Link href="/contact">
-              <Button className="font-extrabold">Test2</Button>
+            <Link href="https://www.linkedin.com/in/tylerkapadia/" rel="noopener noreferrer" target="_blank">
+              <Button className="font-extrabold"><Image 
+                              src="/linkedin_logo_1.png" 
+                              alt="Github Logo"
+                              width={30}
+                              height={30}
+                              className="object-contain"
+                              priority
+                            />LinkedIn</Button>
             </Link>
           </div>
         </div>
