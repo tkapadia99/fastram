@@ -2,6 +2,8 @@ import { Card, CardHeader, CardContent, CardDescription, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import { Badge } from "@/components/ui/badge";
+
 
 
 export default function About() {
@@ -12,10 +14,28 @@ export default function About() {
       {company: "TKAP Ventures LLC", logo: "TK.png", description: "LLC I own and work on a variety of projects", slug:"tkap"}
     ]
 
+    const technologies = ["Python", "JavaScript", "Docker", "PostgreSQL", "Databricks", "Azure", "Kubernetes", "NextJS", "Github Actions", "Power BI", "Tableau"]
+
     return (
       <main>
-        <div className="font-extrabold text-3xl p-4">Work Experience</div>
-        <div className="flex gap-4 p-4">
+        <div className="flex flex-wrap gap-4 p-6">
+          <Image src={"/profile.jpeg"} alt={"tyler kapadia"} width={500} height={500}/>
+          <div>
+            <div className="font-extrabold text-3xl p-4">About Me</div>
+
+            <div className="text-xl p-4">I'm a developer based in the Dallas/Fort Worth area. Proud grad of UT Austin, Bachelors in Electrical and Computer Engineering. I've worked on a variety of projects with tons of different technologies!
+              In my free time, I love to travel, bake sourdough, and geek out on all things fitness/nutrition. Feel free to read more about my work experiences below</div>
+
+            <div className="font-extrabold text-3xl p-4">Technologies</div>
+
+            <div className="flex flex-wrap gap-2">{technologies.map((tech)=><Badge className="px-4 py-2 text-lg" key={tech} variant="outline">{tech}</Badge>) }</div>
+
+          </div>
+        </div>
+        <div className=""></div>
+
+        <div className="font-extrabold text-3xl p-4">Work Experiences</div>
+        <div className="flex flex-wrap gap-4 p-4">
 
           {workExperiences.map((experience) =>
           <Card className="w-[350px]" key={experience.company}>

@@ -47,17 +47,17 @@ export default function RootLayout({
             <NavigationMenuList className="flex gap-4">
               <NavigationMenuItem>
                 <Link href="/">
-                  <Button variant="ghost" className="text-white font-extrabold 2xl:text-2xl">Home</Button>
+                  <Button variant="ghost" className="text-white font-extrabold lg:text-2xl">Home</Button>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <Link href="/about">
-                  <Button variant="ghost" className="text-white font-extrabold 2xl:text-2xl">About</Button>
+                  <Button variant="ghost" className="text-white font-extrabold lg:text-2xl">About</Button>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <Link href="/contact">
-                  <Button variant="ghost" className="text-white font-extrabold 2xl:text-2xl">Contact</Button>
+                  <Button variant="ghost" className="text-white font-extrabold lg:text-2xl">Contact</Button>
                 </Link>
               </NavigationMenuItem>
             </NavigationMenuList>
