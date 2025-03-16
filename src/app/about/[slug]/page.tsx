@@ -1,11 +1,9 @@
 import { getMarkdownBySlug } from "@/lib/markdown";
 import { notFound } from "next/navigation";
 
-export default async function DetailPage({ params }: { params: { slug: string } }) {
+export default async function DetailPage({ params }: { params: Promise<{ slug: string }>}) {
 
-  params = await params
-
-  let markdownData = await getMarkdownBySlug(params.slug);
+  const markdownData = await getMarkdownBySlug((await params).slug);
 
   if (!markdownData) return notFound();
 

@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardContent, CardDescription, CardFooter, CardTitle } from "@/components/ui/card";
+import { Card, CardHeader, CardContent, CardDescription, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,7 +8,8 @@ export default function About() {
 
     const workExperiences = [{company: "American Airlines", logo: "aa_logo.png", description:"Software Devloper for 2.5+ years", slug:"aa"},
       {company: "Accenture", logo: "accenture_logo.png", description:"Technology Summer Analyst (Summer 2021)", slug:"acn"},
-      {company: "MediaKind", logo: "mediakind_logo.png", description:"Software Devloper for 2+ years while in college", slug:"mk"}
+      {company: "MediaKind", logo: "mediakind_logo.png", description:"Software Devloper for 2+ years while in college", slug:"mk"},
+      {company: "TKAP Ventures LLC", logo: "TK.png", description: "LLC I own and work on a variety of projects", slug:"tkap"}
     ]
 
     return (

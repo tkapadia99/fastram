@@ -9,11 +9,11 @@ export default function Home() {
     <main className="relative w-screen h-screen">
         <div className="flex justify-center items-center pt-[50]">
           <div className="w-80 h-80 rounded-full overflow-hidden">
-            <img src="/profile.jpeg" alt="Profile Photo" className="w-full h-full object-cover" />
+            <Image src="/profile.jpeg" alt="Profile Photo" width={75} height={75} className="w-full h-full object-cover" />
           </div>
         </div>
         <div className="relative flex flex-col items-center justify-center w-full text-white p-4 pt-[50]">
-          <h1 className="text-4xl font-bold text-black text-center max-w-md">Hi, I'm Tyler Kapadia! Welcome to my portfolio site</h1>
+          <h1 className="text-4xl font-bold text-black text-center max-w-md">{`Hi, I'm Tyler Kapadia! Welcome to my portfolio site`}</h1>
           <p className="mt-4 text-lg">A showcase of my work and experience.</p>
           <div className="mt-6 flex gap-4 flex-wrap">
             <a href="/resume.pdf" download className="flex items-center">
