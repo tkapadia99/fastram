@@ -18,13 +18,13 @@ export default function About() {
 
     return (
       <main>
-        <div className="flex flex-wrap gap-4 p-6">
-          <Image src={"/profile.jpeg"} alt={"tyler kapadia"} width={500} height={500}/>
-          <div>
+        <div className="flex flex-wrap gap-8 p-6">
+          <Image className="flex-1 max-w-[500px]" src={"/profile.jpeg"} alt={"tyler kapadia"} width={500} height={500}/>
+          <div className="flex-1 min-w-[300px]">
             <div className="font-extrabold text-3xl p-4">About Me</div>
 
-            <div className="text-xl p-4">I'm a developer based in the Dallas/Fort Worth area. Proud grad of UT Austin, Bachelors in Electrical and Computer Engineering. I've worked on a variety of projects with tons of different technologies!
-              In my free time, I love to travel, bake sourdough, and geek out on all things fitness/nutrition. Feel free to read more about my work experiences below</div>
+            <div className="text-xl p-4">{`I'm a developer based in the Dallas/Fort Worth area. Proud grad of UT Austin, Bachelors in Electrical and Computer Engineering. I've worked on a variety of projects with tons of different technologies!
+              In my free time, I love to travel, bake sourdough, and geek out on all things fitness/nutrition. Feel free to read more about my work experiences below`}</div>
 
             <div className="font-extrabold text-3xl p-4">Technologies</div>
 
